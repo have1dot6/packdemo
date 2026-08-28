@@ -13,6 +13,7 @@ jobs:
           registry-token: ${{ secrets.NPM_TOKEN }}
       - uses: have1dot6/nebula-actions/setup-android@main
         with:
+          java-version: '21'
           release-tag: v1.0.0
           debug: 'true'
           github-token: ${{ secrets.GITHUB_TOKEN }}
