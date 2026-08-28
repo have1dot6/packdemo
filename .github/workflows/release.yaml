@@ -13,3 +13,5 @@ jobs:
         with:
           release-tag: v1.0.0
           debug: 'true'
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          release-repo: ${{ github.repository }}
